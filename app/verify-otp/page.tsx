@@ -11,6 +11,10 @@ import { useSearchParams } from "next/navigation";
 import { useState } from "react";
 
 export default function VerifyOTPPage() {
+  return <VerifyOTP />;
+}
+
+function VerifyOTP() {
   const searchParams = useSearchParams();
   const email = searchParams.get("email") || "";
   const type = searchParams.get("type") || "login";
